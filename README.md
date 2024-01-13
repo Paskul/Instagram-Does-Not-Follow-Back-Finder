@@ -8,4 +8,4 @@ It's important to request a Complete Copy > Date Range: All Time > Format: JSON.
 
 ![Programmed GUI](https://cdn.discordapp.com/attachments/1195594062439399484/1195594778302226572/image.png?ex=65b48f68&is=65a21a68&hm=1307f95308c58ceb8621ac179d0383892ee41a1ded790dbd0e03be48ac05e5fb&)
 
-Quickly developed by Pascal. Should run in O(n) time.
+Quickly developed by Pascal. Runs in O(n^2) maybe I'll fix it one day who knows?
