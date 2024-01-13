@@ -31,17 +31,14 @@ def getList(folder_path):
     except FileNotFoundError:
         return "FALSE"
 
-# Define the layout
 layout = [
     [sg.Text("Select Folder:"), sg.Input(key='-FOLDER-'), sg.FolderBrowse()],
     [sg.Button("Run"), sg.Button("Exit")],
     [sg.Multiline(size=(60, 20), key='-OUTPUT-', autoscroll=True)]
 ]
 
-# Create the Window
 window = sg.Window("Does Not Follow Back Tool", layout)
 
-# Event Loop
 while True:
     event, values = window.read()
 
@@ -53,7 +50,7 @@ while True:
             output = getList(folder_path)
             formatted_output = "Incorrect Downloaded File! Try again!\nPotentially move back a few files, or unzip for the folder.\nShould look something like...\nC:/Users/name/Desktop/instagram-username-2024-01-01-xyz123"
             if output != "FALSE":
-                formatted_output = '\n'.join(output)  # Join list items into a single string with newlines
+                formatted_output = '\n'.join(output)
             window['-OUTPUT-'].update(formatted_output)
         else:
             sg.popup("Please select a folder first!")
