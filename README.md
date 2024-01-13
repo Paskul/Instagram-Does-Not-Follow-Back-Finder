@@ -1,4 +1,4 @@
 # Instagram Does Not Follow Back Finder
-Tool to find usernames that do not follow you back on Instagram.
+Tool to find usernames that do not follow you back on Instagram. Uses Python libraries json and PySimpleGUI
 
-Quickly developed by Pascal in Python using libraries json and PySimpleGUI, should run in O(n) time.
+Quickly developed by Pascal in. Should run in O(n) time.
